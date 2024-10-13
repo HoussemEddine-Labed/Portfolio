@@ -18,42 +18,19 @@ body {
   width: 100%;
   max-width: calc(100% - 64px);
   height: 90vh;
-  border: 1px solid #333; /* Border around the container */
+  border: 1px solid #333;
+  /* Border around the container */
   padding: 40px;
   position: relative;
 }
 
-header {
-  margin-bottom: 24px;
-}
-
-header h1 {
-  font-size: 3.5em;
-  font-weight: 300;
-  color: #f0f0f0;
-}
-
-header p {
-  font-size: 1.2em;
-  color: #b0b0b0;
-  /* margin-top: 10px; */
-}
-
-/* .sidebar {
-  position: absolute;
-  top: 80px;
-  left: 40px;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-} */
-
 .sidebar {
   display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    max-height: 50vh;
-} 
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  max-height: 50vh;
+}
 
 .sidebar ul {
   list-style: none;
@@ -101,11 +78,12 @@ header p {
   color: #fff;
 }
 
+.content-section {
+  overflow-y: auto;
+  height: 65vh;
+}
+
 .bio-section {
-  position: absolute;
-  top: 150px;
-  right: 40px;
-  max-width: 300px;
   color: #b0b0b0;
   font-size: 1em;
   line-height: 1.5;
@@ -129,4 +107,115 @@ body:after {
   opacity: 0.05;
   pointer-events: none;
   mix-blend-mode: difference;
+}
+
+/* Basic styling for the main header */
+h2 {
+  font-family: Arial, sans-serif;
+  color: #f0f0f0;
+}
+
+/* Styling for each collapsible category */
+summary {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  color: #b0b0b0;
+  border-color: #f1f1f1;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+summary:hover {
+  color: white;
+}
+
+/* Style for the content of each collapsed section */
+details[open] div {
+  padding: 10px;
+  /* background-color: #f9f9f9; */
+  /* border-radius: 0 0 5px 5px; */
+  margin-top: 5px;
+}
+
+/* Hide content by default */
+details div {
+  display: none;
+}
+
+details[open] div {
+  display: block;
+}
+
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+  margin-bottom: 2.4rem;
+  /* Inherit background color from parent */
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Left section with name and title */
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand h1 {
+  font-size: 3.5em;
+  font-weight: 300;
+  color: #f0f0f0;
+}
+
+.brand p {
+  font-size: 1.2em;
+  color: #b0b0b0;
+}
+
+/* Right section with menu items */
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: background 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #eee;
+  color: #0d0d0d;
+  border-radius: 5px;
+}
+
+.menu a.active {
+  border-bottom: 2px solid white;
+}
+
+/* Center menu in mobile view */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
