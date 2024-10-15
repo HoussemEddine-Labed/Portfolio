@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Houssem Eddine Labed - Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/style.css">
     <script src="/assets/main.js" defer></script>
   </head>
@@ -12,75 +13,77 @@
   <body>
     <div class="container">
       <div class="navbar">
-        <!-- Left side: Name and title -->
-        <div class="brand">
+        <a href="#bio" class="brand">
           <h1>Houssem Eddine Labed</h1>
           <p>Developer</p>
-        </div>
-        <!-- Right side: Menu items -->
+        </a>
         <div class="menu">
-          <a href="#bio">Bio</a>
           <a href="#experience">Experience</a>
           <a href="#technical-skills">Technical Skills</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
         </div>
       </div>
       <div class="content-section">
-        <section class="technical-skills-section">
+        <section id='technical-skills' class="technical-skills-section">
           <h2>Technical Skills</h2>
-          <details>
-            <summary>Languages</summary>
-            <div>
-              C#, .NET Core, JavaScript, SQL
-            </div>
-          </details>
-  
-          <details>
-            <summary>Frameworks</summary>
-            <div>
-              ASP.NET Core, Entity Framework, MVC, Web API
-            </div>
-          </details>
-  
-          <details>
-            <summary>Frontend</summary>
-            <div>
-              HTML, CSS, JavaScript, jQuery, Angular/React (if applicable)
-            </div>
-          </details>
-  
-          <details>
-            <summary>Databases</summary>
-            <div>
-              MS SQL Server, MySQL, Entity Framework
-            </div>
-          </details>
-  
-          <details>
-            <summary>Tools & Technologies</summary>
-            <div>
-              Visual Studio, Git, Docker, Jenkins, Azure DevOps
-            </div>
-          </details>
-  
-          <details>
-            <summary>Methodologies</summary>
-            <div>
-              Agile (Scrum), TDD, CI/CD
-            </div>
-          </details>
-          
+          <div class="skill-category">
+            <div class="skill-title">Languages:</div>
+            <div class="skill-content">C#, Java, JavaScript, TypeScript, HTML, CSS</div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-title">Frameworks:</div>
+            <div class="skill-content">.Net Core, .Net Framework, JavaEE, Blazor, Vue3</div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-title">Libraries:</div>
+            <div class="skill-content">React, SignalR, Syncfusion, Swagger, XUnit, JQuery, FFMPEG</div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-title">Databases:</div>
+            <div class="skill-content">Microsoft SQL Server, MySQL</div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-title">Tools:</div>
+            <div class="skill-content">Visual Studio, Visual Studio Code, Eclipse IDE, Trello, Git, Github, Postman,
+              Figma, Asana, Slack</div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-title">External services implemented:</div>
+            <div class="skill-content">Twilio, BrainTree, Stripe, Firebase Notification, MailGun, Sentry, Google Maps
+              Platform</div>
+          </div>
+        </section>
+        <section id='experience' class="experience-section">
+          <h2>Experience</h2>
+        </section>
+        <section id='projects' class="projects-section">
+          <h2>Projects</h2>
+        </section>
+        <section id='bio' class="bio-section">
+          <p>Born in 1993 in Annaba, Algeria, I am a Full Stack Developer with a Master’s degree and over 4 years
+            ofexperience in crafting robust applications.</p>
+          <p> My primary expertise lies in backend development, particularly with technologies such as .NET,
+            though I also enjoy working on frontend frameworks like Blzor and Vue3.</p>
+          <p>I am passionate about creating practical yet captivating digital experiences through thoughtful development
+            and experimentation. My journey has led me to work on various projects that prioritize performance and user
+            experience.</p>
+          <p>Feel free to explore my portfolio to see my work, or get in touch if you'd like to collaborate!</p>
         </section>
       </div>
-
-      <!-- <section class="bio-section">
-            <p>Born in 1993 in Annaba, Algeria.<br>
-            I’m a developer focused on creating practical yet captivating digital experiences through thoughtful development and experimentation.</p>
-    </section> -->
-
       <footer>
-        <p>© Houssem Eddine Labed</p>
+        <div>
+          <p>© Houssem Eddine Labed</p>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/HoussemEddine-Labed"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:labedhoussem@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/houssem-eddine-labed-8a79b3155"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
       </footer>
     </div>
   </body>
