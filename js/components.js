@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', async function() {
     // Load header
-    const headerResponse = await fetch('/components/header.html');
+    const headerResponse = await fetch('components/header.html');
     const headerHtml = await headerResponse.text();
     document.getElementById('header-placeholder').innerHTML = headerHtml;
 
     // Load footer
-    const footerResponse = await fetch('/components/footer.html');
+    const footerResponse = await fetch('components/footer.html');
     const footerHtml = await footerResponse.text();
     document.getElementById('footer-placeholder').innerHTML = footerHtml;
 
