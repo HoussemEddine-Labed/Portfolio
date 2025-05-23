@@ -1,91 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+  <title>Labed Houssem Eddine | Full-Stack .NET Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/js/components.js"></script>
+</head>
+<body class="bg-[#0f1115] text-white font-sans min-h-screen flex flex-col" data-page="home">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Houssem Eddine Labed - Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/assets/style.css">
-    <script src="/assets/main.js" defer></script>
-  </head>
+  <!-- Header placeholder -->
+  <div id="header-placeholder"></div>
 
-  <body>
-    <div class="container">
-      <div class="navbar">
-        <a href="#bio" class="brand">
-          <h1>Houssem Eddine Labed</h1>
-          <p>Developer</p>
-        </a>
-        <div class="menu">
-          <a href="#experience">Experience</a>
-          <a href="#technical-skills">Technical Skills</a>
-          <a href="#projects">Projects</a>
+  <!-- Hero Section -->
+  <main class="flex-grow flex flex-col items-center justify-center text-center px-4 py-20">
+    <h2 class="text-4xl sm:text-5xl font-bold mb-4">Labed Houssem Eddine</h2>
+    <p class="text-xl text-blue-500 font-semibold mb-6">Full-Stack .NET Developer | +5 years EXP</p>
+    <p class="max-w-xl text-gray-400 text-base sm:text-lg leading-relaxed">
+      Specializing in building robust and scalable applications with .NET Core,
+      microservices architecture, and modern web technologies.
+      Passionate about crafting elegant solutions to complex problems.
+    </p>
+    <!-- <div class="mt-10">
+      <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded text-sm">View My Work</a>
+    </div> -->
+
+    <!-- Formations, Diplömes & Certification -->
+    <section class="mt-12 w-full max-w-2xl mx-auto text-left">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Formations Section -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-2 text-blue-400">My educational background</h3>
+        <div class="bg-[#181b20] rounded-lg p-5 mb-6 border border-gray-700">
+        <h4 class="text-lg font-bold text-white mb-1">Master en Ingénierie du logiciel complexe <span class="text-sm text-gray-400 font-normal">2019</span></h4>
+        <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+          <li>Acquired advanced knowledge in software architecture, complex system design, and project management methodologies.</li>
+        </ul>
         </div>
       </div>
-      <div class="content-section">
-        <section id='technical-skills' class="technical-skills-section">
-          <h2>Technical Skills</h2>
-          <div class="skill-category">
-            <div class="skill-title">Languages:</div>
-            <div class="skill-content">C#, Java, JavaScript, TypeScript, HTML, CSS</div>
-          </div>
 
-          <div class="skill-category">
-            <div class="skill-title">Frameworks:</div>
-            <div class="skill-content">.Net Core, .Net Framework, JavaEE, Blazor, Vue3</div>
-          </div>
-
-          <div class="skill-category">
-            <div class="skill-title">Libraries:</div>
-            <div class="skill-content">React, SignalR, Syncfusion, Swagger, XUnit, JQuery, FFMPEG</div>
-          </div>
-
-          <div class="skill-category">
-            <div class="skill-title">Databases:</div>
-            <div class="skill-content">Microsoft SQL Server, MySQL</div>
-          </div>
-
-          <div class="skill-category">
-            <div class="skill-title">Tools:</div>
-            <div class="skill-content">Visual Studio, Visual Studio Code, Eclipse IDE, Trello, Git, Github, Postman,
-              Figma, Asana, Slack</div>
-          </div>
-
-          <div class="skill-category">
-            <div class="skill-title">External services implemented:</div>
-            <div class="skill-content">Twilio, BrainTree, Stripe, Firebase Notification, MailGun, Sentry, Google Maps
-              Platform</div>
-          </div>
-        </section>
-        <section id='experience' class="experience-section">
-          <h2>Experience</h2>
-        </section>
-        <section id='projects' class="projects-section">
-          <h2>Projects</h2>
-        </section>
-        <section id='bio' class="bio-section">
-          <p>Born in 1993 in Annaba, Algeria, I am a Full Stack Developer with a Master’s degree and over 4 years
-            ofexperience in crafting robust applications.</p>
-          <p> My primary expertise lies in backend development, particularly with technologies such as .NET,
-            though I also enjoy working on frontend frameworks like Blzor and Vue3.</p>
-          <p>I am passionate about creating practical yet captivating digital experiences through thoughtful development
-            and experimentation. My journey has led me to work on various projects that prioritize performance and user
-            experience.</p>
-          <p>Feel free to explore my portfolio to see my work, or get in touch if you'd like to collaborate!</p>
-        </section>
+      <!-- Languages Section -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-2 text-blue-400">Languages</h3>
+        <div class="grid grid-cols-1 gap-4">
+        <div class="bg-[#181b20] rounded-lg p-4 border border-gray-700">
+          <span class="font-bold text-white">Arabe</span>
+          <div class="text-gray-400 text-sm">Native</div>
+        </div>
+        <div class="bg-[#181b20] rounded-lg p-4 border border-gray-700">
+          <span class="font-bold text-white">Français</span>
+          <div class="text-gray-400 text-sm">Professional</div>
+        </div>
+        <div class="bg-[#181b20] rounded-lg p-4 border border-gray-700">
+          <span class="font-bold text-white">Anglais</span>
+          <div class="text-gray-400 text-sm">Professional</div>
+        </div>
+        </div>
       </div>
-      <footer>
-        <div>
-          <p>© Houssem Eddine Labed</p>
-        </div>
-        <div class="contact-links">
-          <a href="https://github.com/HoussemEddine-Labed"><i class="fa-brands fa-github"></i></a>
-          <a href="mailto:labedhoussem@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/houssem-eddine-labed-8a79b3155"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-      </footer>
     </div>
-  </body>
+    </section>
+  </main>
 
+  <!-- Footer placeholder -->
+  <div id="footer-placeholder"></div>
+
+</body>
 </html>
