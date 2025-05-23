@@ -27,13 +27,23 @@ document.addEventListener('DOMContentLoaded', async function() {
             yearSpan.textContent = new Date().getFullYear();
         }
 
-        // Mobile menu toggle
+        // Mobile menu handling
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const navMenu = document.getElementById('nav-menu');
         
         if (mobileMenuButton && navMenu) {
+            // Toggle menu on button click
             mobileMenuButton.addEventListener('click', () => {
                 navMenu.classList.toggle('hidden');
+            });
+
+            // Simplified resize handler without delays
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 768) { // md breakpoint
+                    navMenu.classList.remove('hidden'); // Always show menu on desktop
+                } else {
+                    navMenu.classList.add('hidden'); // Hide menu on mobile
+                }
             });
 
             // Close menu when clicking outside
@@ -42,13 +52,6 @@ document.addEventListener('DOMContentLoaded', async function() {
                     !mobileMenuButton.contains(e.target) && 
                     !navMenu.classList.contains('hidden')) {
                     navMenu.classList.add('hidden');
-                }
-            });
-
-            // Close menu on window resize if switching to desktop
-            window.addEventListener('resize', () => {
-                if (window.innerWidth >= 768) { // md breakpoint
-                    navMenu.classList.remove('hidden');
                 }
             });
         }
